@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab #1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<table id="headerContainer">
+    <tr>
+        <td><h1 id="mainHeaderText">Web. Лабораторная работа №1.</h1></td>
+        <td id="rightHeaderPart">
+            <h2>Вариант № 13206</h2>
+            <h3>Полошков Борис, P3213</h3>
+        </td>
+    </tr>
+</table>
+<table id="imageContainer">
+    <tr>
+        <td id="imageCell"><img src="img/grid.png" alt="Grid"></td>
+    </tr>
+</table>
+<table id="inputContainer">
+    <tr id="inputDataHeader">
+        <td colspan="100%">
+            <h2>Введите данные:</h2>
+        </td>
+    </tr>
+
+    <tr id="inputX">
+        <td>
+            <label for="xCoordinate">
+                X:
+            </label>
+
+        </td>
+        <td>
+            <input type="text" id="xCoordinate" size=100% placeholder="Введите число в интервале (-3; 5)" maxlength="15">
+        </td>
+    </tr>
+
+    <tr id="inputR">
+        <td>
+            R:
+        </td>
+
+        <td id="rRadio" class="options">
+            <label>
+                <input type="radio" name="r" value="1">
+                1
+            </label>
+            <label>
+                <input type="radio" name="r" value="1.5">
+                1.5
+            </label>
+            <label>
+                <input type="radio" name="r" value="2">
+                2
+            </label>
+            <label>
+                <input type="radio" name="r" value="2.5">
+                2.5
+            </label>
+            <label>
+                <input type="radio" name="r" value="3">
+                3
+            </label>
+        </td>
+    </tr>
+
+    <tr id="inputY">
+        <td>
+            Y:
+        </td>
+        <td id="YSelectRow">
+            <label for="YSelect"></label>
+            <select id="YSelect">
+                <option value="">Выберите Y</option>
+                <option name="YValue" value="-2">-2</option>
+                <option name="YValue" value="-1.5">-1.5</option>
+                <option name="YValue" value="-1">-1</option>
+                <option name="YValue" value="-0.5">-0.5</option>
+                <option name="YValue" value="0">0</option>
+                <option name="YValue" value="0.5">0.5</option>
+                <option name="YValue" value="1">1</option>
+                <option name="YValue" value="1.5">1.5</option>
+                <option name="YValue" value="2">2</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="100%" id="buttonContainer">
+            <button class="submit-button" type="submit" onclick="submit()">Let's go!</button>
+        </td>
+    </tr>
+</table>
+
+<table id="result-table">
+    <tr class="table-header">
+        <th>X</th>
+        <th>Y</th>
+        <th>R</th>
+        <th>Локальное время</th>
+        <th>Время исполнения</th>
+        <th>Попадание</th>
+    </tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
